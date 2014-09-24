@@ -8,7 +8,7 @@ def triangle_area(base, height): /* header ==> tells you about the function; a c
     area = (1.0 / 2) * base * height // indention is important
     return area // output of function
 
-a function only executes when you call it
+> a function only executes when you call it
 
 a1 = triangle_area(3, 8)
 print a1 // prints the return value
@@ -40,8 +40,8 @@ def hello():
 #test
 hello()
 
-==> doesn't have a return value;
-==> if you forget return value, Python automatically adds a return value automatically. So if you see a "None" value in the output, you forgot the return value.
+> doesn't have a return value;
+> if you forget return value, Python automatically adds a return value automatically. So if you see a "None" value in the output, you forgot the return value.
 
 ###Operations###
 
