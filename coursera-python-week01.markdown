@@ -13,18 +13,18 @@ def triangle_area(base, height): /* header ==> tells you about the function; a c
 a1 = triangle_area(3, 8)
 print a1 // prints the return value
 
-_converts fahrenheit to celsius_
+####_converts fahrenheit to celsius_
 
 def fahrenheit2celsius(fahrenheit):
     celsius = (5.0 / 9) * (fahrenheit - 32)
     return celsius
 
-#test
+_test_
 c1 = fahrenheit2celsius(32)
 c1 = fahrenheit2celsius(212)
 print c1, c2
 
-_converts fahrenheit to kelvin_
+####_converts fahrenheit to kelvin_
 _using a function inside a function_
 
 def fahrenheit2kelvin(fahrenheit):
@@ -32,12 +32,12 @@ def fahrenheit2kelvin(fahrenheit):
     kelvin = celsius + 273.15
     return = kelvin
 
-_prints hello, world!_
+####_prints hello, world!_
 
 def hello():
     print "Hello, world!"
 
-#test
+_test_
 hello()
 
 > doesn't have a return value;
@@ -52,7 +52,7 @@ _long division - divide by a number, we get a quotient plus a remainder_
 _quotient is integer division //, the remainder is % (Docs)_
 
 
-_problem - get the ones digit of a number_
+####_problem - get the ones digit of a number_
 num = 49
 tens = num // 10
 ones = num % 10
@@ -63,14 +63,14 @@ print 10 * tens + ones, num
 **The "%" operator** computes the remainder of one number with respect to another**
 
 
-_application - 24 hour clock_
+####_application - 24 hour clock_
 _http://en.wikipedia.org/wiki/24-hour_clock_
 
 hour = 20
 shift = 8
 print (hour + shift) % 24
 
-_Data conversion operations_
+####_Data conversion operations_
 
 _convert an integer into string - str_
 _convert an hour into 24-hour format "03:00", always print leading zero_
@@ -83,7 +83,7 @@ print str(tens), str(ones), ":00"
 print str(tens) + str(ones) + ":00"
 
 
-_Data conversion operations_
+#####_Data conversion operations_
 
 _convert an integer into string - str_
 _convert an hour into 24-hour format "03:00", always print leading zero_
@@ -98,11 +98,11 @@ print str(tens) + str(ones) + ":00"
 **_str_ converts integers into a string**
 **the "+" operator joins strings together**
 
-_convert a string into numbers using int and float_
+####_convert a string into numbers using int and float_
 
 
 
-_Python modules - extra functions implemented outside basic Python_
+#####_Python modules - extra functions implemented outside basic Python_
 
 import simplegui    _access to drawing operations for interactive applications_
 
