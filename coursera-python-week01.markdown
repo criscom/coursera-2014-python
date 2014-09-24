@@ -1,6 +1,6 @@
 #Coursera: Week 1#
 
-###Functions###
+##Functions##
 
 **Always comment a function!**
 
@@ -43,7 +43,7 @@ hello()
 > doesn't have a return value;
 > if you forget return value, Python automatically adds a return value automatically. So if you see a "None" value in the output, you forgot the return value.
 
-###Operations###
+##Operations##
 
 _Remainder - modular arithmetic_
 
@@ -117,3 +117,68 @@ _look in Docs for useful functions_
 print math.pi
 
 ##Logic and conditionals##
+
+def greet(friend, money):
+    if friend and (money > 20):
+        print "Hi!"
+        money = money - 20
+    elif friend:
+        print "Hello"
+    else:
+        print "Ha ha"
+        money = money + 10
+    return money
+
+
+money = 15
+
+money = greet(True, money)
+print "Money:", money
+print ""
+
+money = greet(False, money)
+print "Money:", money
+print ""
+
+money = greet(True, money)
+print "Money:", money
+print ""
+
+
+
+#### Conditionals Examples
+
+##### Return True if year is a leap year, false otherwise
+def is_leap_year(year):
+    if (year % 400) == 0:
+        return True
+    elif (year % 100) == 0:
+        return False
+    elif (year % 4) == 0:
+        return True
+    else:
+        return False
+
+
+year = 2012
+leap_year = is_leap_year(year)
+    
+if leap_year:
+    print year, "is a leap year"
+else:
+    print year, "is not a leap year"
+
+
+
+##Mini Project##
+
+0 == rock
+1 == Spock
+2 == paper
+3 == lizard
+4 == scissors
+
+![RPSLS clock](https://www.evernote.com/shard/s272/sh/29a7f453-dfcb-42c6-be76-8b6999073837/959402745171c1e1eb8df5ed64ab2268)
+
+###Rule
+_beat counterclockwise oponents, lose clockwise oponents
