@@ -178,7 +178,7 @@ else:
 3 == lizard
 4 == scissors
 
-![RPSLS clock](https://www.evernote.com/shard/s272/sh/29a7f453-dfcb-42c6-be76-8b6999073837/959402745171c1e1eb8df5ed64ab2268)
+![RPSLS clock](http://goo.gl/dc7zui)
 
 ###Rule
 _beat counterclockwise oponents, lose clockwise oponents
