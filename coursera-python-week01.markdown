@@ -178,7 +178,7 @@ else:
 3 == lizard
 4 == scissors
 
-![RPSLS clock](http://goo.gl/dc7zui)
+[RPSLS clock](http://goo.gl/dc7zui)
 
 ###Rule
 _beat counterclockwise oponents, lose clockwise oponents
