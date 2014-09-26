@@ -227,27 +227,27 @@ The future value (FV) of your money is how much money you will have in the futur
 >The number of periods (periods) is how many periods in the future this calculation is for.
 >Finish the following code, run it, and submit the printed number. Provide at least four digits of precision after the decimal point.
 
-`def future_value(present_value, annual_rate, periods_per_year, years):`
-    `rate_per_period = annual_rate / periods_per_year`
+`def future_value(present_value, annual_rate, periods_per_year, years):`  
+    `rate_per_period = annual_rate / periods_per_year`  
     `periods = periods_per_year * years`
     
     _Put your code here._
 
-`print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)`
+`print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
 
 >Before submitting your answer, test your function on the following example. future_value(500, .04, 10, 10) should return 745.317442824.
 
 ####Solution
 
-`def future_value(present_value, annual_rate, periods_per_year, years):
-    rate_per_period = annual_rate / periods_per_year
-    periods = periods_per_year * years
-    value = present_value * (1 + rate_per_period) ** periods
-    return value
+`def future_value(present_value, annual_rate, periods_per_year, years):`  
+    `rate_per_period = annual_rate / periods_per_year`  
+    `periods = periods_per_year * years`  
+    `value = present_value * (1 + rate_per_period) ** periods`  
+    `return value`
 
-print "$500 at 4% compounded daily for 10 years yields $", future_value(500, .04, 10, 10)
-print ""
-print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
+`print "$500 at 4% compounded daily for 10 years yields $", future_value(500, .04, 10, 10)`  
+`print ""`  
+`print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)`
 
 ###Question 7
 
