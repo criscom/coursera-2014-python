@@ -52,28 +52,42 @@ def number_to_name(number):
     
     # convert number to a name using if/elif/else
     # don't forget to return the result!
-    
+
+import random    
 
 def rpsls(player_choice): 
     # delete the following pass statement and fill in your code below
-    pass
+    
     
     # print a blank line to separate consecutive games
-print ""
+    print ""
+
     # print out the message for the player's choice
+    print "Player chooses", player_choice
 
     # convert the player's choice to player_number using the function name_to_number()
-
+    player_number = name_to_number(player_choice)
+    
     # compute random guess for comp_number using random.randrange()
+    comp_number = random.randrange(0,5)
 
     # convert comp_number to comp_choice using the function number_to_name()
+    comp_choice = number_to_name(comp_number)
     
     # print out the message for computer's choice
+    print "Computer chooses", comp_choice
 
     # compute difference of comp_number and player_number modulo five
-
+    number = (player_number - comp_number) % 5
+    
     # use if/elif/else to determine winner, print winner message
-
+    if number == 1 or number == 2:
+        print "Player wins!"
+    elif number == 3 or number == 4:
+        print "Computer wins!"
+    else:
+        print "Player and computer tie!"
+    return number
     
 # test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
 rpsls("rock")

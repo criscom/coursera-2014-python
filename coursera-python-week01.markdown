@@ -213,3 +213,58 @@ If the difference is 3 or 4 the second item wins
 1. Build function `rpsls(name)` with string inputs `"rock"`, `"paper"`, `"scissors"`, `"lizard"`, or `"Spock"
 
 > The function then simulates playing a round of Rock-paper-scissors-lizard-Spock by generating its own random choice from these alternatives and then determining the winner using a simple rule that we will next describe.
+
+
+##Quiz
+
+###Compound interest
+
+>When investing money, an important concept to know is compound interest. The equation FV = PV (1+rate)periods relates the following four quantities.
+>
+The present value (PV) of your money is how much money you have now.
+The future value (FV) of your money is how much money you will have in the future.
+>The nominal interest rate per period (rate) is how much interest you earn during a particular length of time, before accounting for compounding. This is typically expressed as a percentage.
+>The number of periods (periods) is how many periods in the future this calculation is for.
+>Finish the following code, run it, and submit the printed number. Provide at least four digits of precision after the decimal point.
+
+`def future_value(present_value, annual_rate, periods_per_year, years):
+    rate_per_period = annual_rate / periods_per_year
+    periods = periods_per_year * years
+    
+    # Put your code here.
+
+print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
+
+>Before submitting your answer, test your function on the following example. future_value(500, .04, 10, 10) should return 745.317442824.
+
+####Solution
+
+def future_value(present_value, annual_rate, periods_per_year, years):
+    rate_per_period = annual_rate / periods_per_year
+    periods = periods_per_year * years
+    value = present_value * (1 + rate_per_period) ** periods
+    return value
+
+print "$500 at 4% compounded daily for 10 years yields $", future_value(500, .04, 10, 10)
+print ""
+print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
+
+###Question 7
+
+####Solution
+
+#Calculate area of polygon
+
+import math
+
+def area_polygon(n, s):
+    area = (((1.0 / 4.0) * n) * (s ** 2)) / (math.tan(math.pi/n))
+    return area
+
+print "The area of a poligon is:", area_polygon(5, 7)
+
+print "==="
+print "SOLUTION"
+print "==="
+
+print "The area of a poligon is:", area_polygon(7, 3)
