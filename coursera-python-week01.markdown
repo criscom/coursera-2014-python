@@ -227,19 +227,19 @@ The future value (FV) of your money is how much money you will have in the futur
 >The number of periods (periods) is how many periods in the future this calculation is for.
 >Finish the following code, run it, and submit the printed number. Provide at least four digits of precision after the decimal point.
 
-`def future_value(present_value, annual_rate, periods_per_year, years):
-    rate_per_period = annual_rate / periods_per_year
-    periods = periods_per_year * years
+`def future_value(present_value, annual_rate, periods_per_year, years):`
+    `rate_per_period = annual_rate / periods_per_year`
+    `periods = periods_per_year * years`
     
-    # Put your code here.
+    _Put your code here._
 
-print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)
+`print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .02, 365, 3)`
 
 >Before submitting your answer, test your function on the following example. future_value(500, .04, 10, 10) should return 745.317442824.
 
 ####Solution
 
-def future_value(present_value, annual_rate, periods_per_year, years):
+`def future_value(present_value, annual_rate, periods_per_year, years):
     rate_per_period = annual_rate / periods_per_year
     periods = periods_per_year * years
     value = present_value * (1 + rate_per_period) ** periods
@@ -257,9 +257,9 @@ print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .0
 
 import math
 
-def area_polygon(n, s):
-    area = (((1.0 / 4.0) * n) * (s ** 2)) / (math.tan(math.pi/n))
-    return area
+def area_polygon(n, s):  
+    area = (((1.0 / 4.0) * n) * (s ** 2)) / (math.tan(math.pi/n))  
+    return area  
 
 print "The area of a poligon is:", area_polygon(5, 7)
 
