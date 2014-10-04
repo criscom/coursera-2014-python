@@ -2,6 +2,8 @@
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
 
+# http://www.codeskulptor.org/#user38_R7oK9fsrKH_0.py
+
 # importing modules
 
 import simplegui
@@ -39,7 +41,7 @@ def range100():
 def range1000():
     # button that changes the range to [0,1000) and starts a new game     
     global secret_number
-    secret_number = range(0,1001)
+    secret_number = random.randrange(0,1001)
     print "New game. Range is from 0 to 1000."
     print "Number of remaining guesses is 10."
     print ""
