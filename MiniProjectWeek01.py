@@ -97,5 +97,3 @@ rpsls("lizard")
 rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
-
-
