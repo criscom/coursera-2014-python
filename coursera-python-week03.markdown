@@ -67,20 +67,20 @@ i1 = int(s5[1:])
 print i1 + 38
 ```
 
-*Get the first character out of a string*  
+*Get the first character out of a string*   
 ```print s1[0]```
 
-*Get the last character out of a string*  
+*Get the last character out of a string*   
 ```print s1[-1]``
 
-*Print the length of a string*  
+*Print the length of a string*   
 ```print len(s1)```
 
-*Pull out a slice of a string*  
-```print s1[0:7]```  
+*Pull out a slice of a string*   
+```print s1[0:7]```   
 > Go from first character to 7th but don't include 7th
 
-*Start at the 6th character and go to the end*  
+*Start at the 6th character and go to the end*   
 ```s2[6:]```
 
 *Start at the beginning up to but not including 13*
@@ -241,3 +241,7 @@ timer = simplegui.create_timer(interval, tick)
 frame.start()
 timer.start()
 ```
+
+##Visualizing drawing and timers
+
+
