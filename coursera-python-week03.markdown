@@ -83,7 +83,7 @@ print i1 + 38
 *Start at the 6th character and go to the end*   
 `s2[6:]`
 
-*Start at the beginning up to but not including 13*
+*Start at the beginning up to but not including 13*   
 `s2[:13]`
 
 *String indices begin at 0. String slices start from the first index and go up to, but not including, the last index.*
@@ -92,7 +92,7 @@ print i1 + 38
 `s5 = str(375)`
 
 *Convet string into an integer with int function*  
-i1 = int(s5[1:])
+`i1 = int(s5[1:])`
 
 ```
 # Handle single quantity
