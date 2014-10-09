@@ -68,28 +68,28 @@ print i1 + 38
 ```
 
 *Get the first character out of a string*   
-```print s1[0]```
+`print s1[0]`
 
 *Get the last character out of a string*   
-```print s1[-1]``
+`print s1[-1]`
 
 *Print the length of a string*   
-```print len(s1)```
+`print len(s1)`
 
 *Pull out a slice of a string*   
-```print s1[0:7]```   
+`print s1[0:7]`   
 > Go from first character to 7th but don't include 7th
 
 *Start at the 6th character and go to the end*   
-```s2[6:]```
+`s2[6:]`
 
 *Start at the beginning up to but not including 13*
-```s2[:13]```
+`s2[:13]`
 
 *String indices begin at 0. String slices start from the first index and go up to, but not including, the last index.*
 
 *Convert integer into a string with the str-function*  
-```s5 = str(375)```
+`s5 = str(375)`
 
 *Convet string into an integer with int function*  
 i1 = int(s5[1:])
