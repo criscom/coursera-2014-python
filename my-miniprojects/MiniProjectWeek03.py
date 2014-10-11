@@ -70,20 +70,25 @@ def start_timer():
 
 def stop_timer():
     global started, click, success, score
-    timer.stop()
-    started = False
-    click += 1
-    if (t % 10) == 0:
-        success +=1
+    if started == True:
+       timer.stop()
+       started = False
+       click += 1
+       if (t % 10) == 0:
+          success +=1
     score = str(success)+" / "+str(click)
     return score
     
 
 def reset_timer():
-    global t, started
+    global t, started, click, success, score
     if started:
        timer.stop()
     t = 0
+    click = 0
+    success = 0
+    score = str(success)+" / "+str(click)
+    return score
        
 
 # define event handler for timer with 0.1 sec interval
