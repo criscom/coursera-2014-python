@@ -276,7 +276,7 @@ def dist(p,q):
 ####Update for motion
 
 *Math*  
-The new position of an object is the old position plus a constant a times velocity
+The new position of an object is the old position plus a constant a times velocity  
 `p = p + a * v`
 
 *Python*  
@@ -308,8 +308,8 @@ The new position of an object is the old position plus a constant a times veloci
 
 *Left wall*  
 *Compute reflected velocity vector*  
-`v[0] = -v[0]`
-`v[1] = v[1]
+`v[0] = -v[0]`  
+`v[1] = v[1]`
 
 (https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
 
@@ -350,6 +350,7 @@ frame.start()
 
 ###Bouncing on all four walls
 >my own version
+
 ```
 import simplegui
 
