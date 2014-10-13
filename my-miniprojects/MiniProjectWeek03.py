@@ -1,3 +1,5 @@
+# http://www.codeskulptor.org/#user38_ciVcZSnCxGM7Qaf.py
+
 # template for "Stopwatch: The Game"
 
 import simplegui
@@ -84,7 +86,9 @@ def reset_timer():
     global t, started, click, success, score
     if started:
        timer.stop()
+    # resetting stopwatch
     t = 0
+    # resetting score
     click = 0
     success = 0
     score = str(success)+" / "+str(click)
