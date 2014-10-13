@@ -301,7 +301,7 @@ The new position of an object is the old position plus a constant a times veloci
 *Right wall*  
 `p[0]>= (width - 1) - r`
 
-![Collision of ball of width center p and radius r with wall](https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
+![Collision of ball of width center p and radius r with wall](https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92/res/604b3ca0-e588-4a17-bdee-deda38902bbc/skitch.png)
 
 
 ###Reflections - update the velocity vector v
@@ -311,7 +311,7 @@ The new position of an object is the old position plus a constant a times veloci
 `v[0] = -v[0]`  
 `v[1] = v[1]`
 
-![compute reflected velocity vector](https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
+![compute reflected velocity vector](https://www.evernote.com/shard/s272/sh/db6f8f1b-fdba-42d0-bd7d-e84634ccc99a/05b427b30349468331589886babef728/res/1a58d536-b103-4e8a-b455-295b4562703c/skitch.png)
 
 ```
 import simplegui
