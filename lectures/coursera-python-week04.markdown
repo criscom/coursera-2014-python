@@ -238,7 +238,7 @@ frame.start()
 
 ##Collisions and reflections
 
-_Two points_  
+####Two points
 *Math - points on canvas*  
 `p,q`
 
@@ -255,7 +255,7 @@ def dist(p,q):
     return math.srt((p[0] - q[0])**2 + (p[1] - q[1])**2)
 ``` 
 
-_Vector as difference of two points_
+###Vector as difference of two points
 
 *Math*  
 `v = p - q`
@@ -264,7 +264,7 @@ _Vector as difference of two points_
 `v[0] = p[0] - q[0]`
 `v[1] = p[1] - p[1]`
 
-_Move/translate point using a vector_
+####Move/translate point using a vector
 
 *Math*  
 `p = q + v`
@@ -273,7 +273,7 @@ _Move/translate point using a vector_
 `p[0] = q[0] + v[0] # horizontal position`
 `p[1] = q[1] + v[1] # vertical position`
 
-_Update for motion_
+####Update for motion
 
 *Math*  
 The new position of an object is the old position plus a constant a times velocity
@@ -283,9 +283,9 @@ The new position of an object is the old position plus a constant a times veloci
 `p[0] = p[0] + a * v[0]`
 `p[1] = p[1] + a * v[1]`
 
-_Collisions_
+###Collisions
 
-*Collision of point p with wall*
+####Collision of point p with wall
 
 *Left wall*  
 `p[0] <=0`
@@ -304,12 +304,12 @@ _Collisions_
 (https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
 
 
-_Reflections - update the velocity vector v_
+###Reflections - update the velocity vector v
 
 *Left wall*  
 *Compute reflected velocity vector*  
 `v[0] = -v[0]`
-`v[1] = v[1]`
+`v[1] = v[1]
 
 (https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
 
@@ -394,4 +394,4 @@ frame.set_draw_handler(draw)
 
 # start frame
 frame.start()
-``
+```
