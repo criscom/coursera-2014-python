@@ -238,38 +238,38 @@ frame.start()
 
 ##Collisions and reflections
 
-_Two points_
-*Math - points on canvas*
+_Two points_  
+*Math - points on canvas*  
 `p,q`
 
-*Python - list of coordinates*
+*Python - list of coordinates*  
 `[p[0], p[1]], [q[0], q[1]]`
 
 _Pythagorean theorem_  
-*Math*
+*Math*  
 `dist(p,q)**2 == (p[0] - q[0])**2 + (p[1] - q[1])**2`
 
 *Python*
 ```
 def dist(p,q):
     return math.srt((p[0] - q[0])**2 + (p[1] - q[1])**2)
-``
+``` 
 
 _Vector as difference of two points_
 
-*Math*
+*Math*  
 `v = p - q`
 
-*Python - list of components*
+*Python - list of components*  
 `v[0] = p[0] - q[0]`
 `v[1] = p[1] - p[1]`
 
 _Move/translate point using a vector_
 
-*Math*
+*Math*  
 `p = q + v`
 
-*Python*
+*Python*  
 `p[0] = q[0] + v[0] # horizontal position`
 `p[1] = q[1] + v[1] # vertical position`
 
@@ -279,7 +279,7 @@ _Update for motion_
 The new position of an object is the old position plus a constant a times velocity
 `p = p + a * v`
 
-*Python*
+*Python*  
 `p[0] = p[0] + a * v[0]`
 `p[1] = p[1] + a * v[1]`
 
@@ -307,9 +307,9 @@ _Collisions_
 _Reflections - update the velocity vector v_
 
 *Left wall*  
-*Compute reflected velocity vector*
+*Compute reflected velocity vector*  
 `v[0] = -v[0]`
-`v[1] = v[1]
+`v[1] = v[1]`
 
 (https://www.evernote.com/shard/s272/sh/dbc9c637-cb56-47dd-b85d-ed0845c7a02a/c2a6d48aa9907b34f2d62767bba6bc92)
 
@@ -394,4 +394,4 @@ frame.set_draw_handler(draw)
 
 # start frame
 frame.start()
-```
+``
