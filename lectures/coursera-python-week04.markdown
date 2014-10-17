@@ -521,6 +521,8 @@ print a
 ```
 > When doing mutations like `a[1] = x` in a function, the variable `a` is considered to be _global_ automatically without defining `a` as `global`.
 
+![mutability](https://www.evernote.com/shard/s272/sh/69691c90-8e4a-4270-9090-9b6b5fcbc293/663035b94acc33c0cb19cec0aa182357/res/97f3514a-3122-4f84-97cf-e8442fd8dc58/skitch.png)
+
 ##Mutability
 
 use the _is_ keyword to find out what is mutable.
