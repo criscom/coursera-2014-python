@@ -558,11 +558,13 @@ b[1] = 100
 print b
 ```
 
-[! Tuple example](https://www.evernote.com/shard/s272/sh/2fc5f0ae-44e9-4de8-a69d-6f738252d8bb/533980398897f1d1551cdd99b0933b31/res/a2016d77-5c7a-4471-a0e6-4bddaa5907bb/skitch.png)
+![Tuple example](https://www.evernote.com/shard/s272/sh/2fc5f0ae-44e9-4de8-a69d-6f738252d8bb/533980398897f1d1551cdd99b0933b31/res/a2016d77-5c7a-4471-a0e6-4bddaa5907bb/skitch.png)
 
 ##Pong
-[! Pong](https://www.evernote.com/shard/s272/sh/aa052b34-1379-4572-ba9b-a58e6398fe56/f2cb868e091d60463f2dba0e3b2f0547/res/ebb65643-835f-4b17-b62b-89dfcbe8152b/skitch.png)   
-[! Pong geometry](https://www.evernote.com/shard/s272/sh/0665dd42-ad0b-4890-b612-2d3647a9e1ca/bad7258da3785a0b51b342ec108de26b/res/d736a7e1-3fd3-4bb6-aa89-fab7372361f5/skitch.png)
+![Pong](https://www.evernote.com/shard/s272/sh/aa052b34-1379-4572-ba9b-a58e6398fe56/f2cb868e091d60463f2dba0e3b2f0547/res/ebb65643-835f-4b17-b62b-89dfcbe8152b/skitch.png)   
+![Pong geometry](https://www.evernote.com/shard/s272/sh/0665dd42-ad0b-4890-b612-2d3647a9e1ca/bad7258da3785a0b51b342ec108de26b/res/d736a7e1-3fd3-4bb6-aa89-fab7372361f5/skitch.png)
+
+###Program template for Pong game
 
 ```python
 # Implementation of classic arcade game Pong
