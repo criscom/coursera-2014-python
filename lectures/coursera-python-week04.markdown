@@ -14,7 +14,7 @@ position = [4,9] // x, y; position/coordinates; variable and list
 
 
 
-```
+```python
 
 # Create 
 
@@ -60,7 +60,7 @@ _List are a collection of objects. They allow us to keep datata that belongs tog
 
 ##Keyboard input
 
-```
+```pyhton
 # Keyboard echo
 
 import simplegui
@@ -98,7 +98,7 @@ f.set_draw_handler(draw)
 f.start()
 ```
 
-```
+```python
 # control the position of a ball using the arrow keys
 
 import simplegui
@@ -144,7 +144,7 @@ time: 0
 position = velocity * time  
 if velocity is constant
 
-```
+```python
 # Ball motion with an explicit timer
 
 import simplegui
@@ -204,7 +204,7 @@ p(t+1) = p(0) + (t+1) + (v)
 
 >The primary operation we will use on vectors and points is to add a vector to a point to get a new point. This is how we will move objects on the canvas from one point to another. Note that if you can add a vector to a point to get another point, then if you subtract two points, you should get a vector. You should never add two points together, this results in a meaningless value.
 
-```
+```python
 # Ball motion with an implicit timer
 
 import simplegui
@@ -250,7 +250,7 @@ _Pythagorean theorem_
 `dist(p,q)**2 == (p[0] - q[0])**2 + (p[1] - q[1])**2`
 
 *Python*
-```
+```python
 def dist(p,q):
     return math.sqrt((p[0] - q[0])**2 + (p[1] - q[1])**2)
 ``` 
@@ -313,7 +313,7 @@ The new position of an object is the old position plus a constant a times veloci
 
 ![compute reflected velocity vector](https://www.evernote.com/shard/s272/sh/db6f8f1b-fdba-42d0-bd7d-e84634ccc99a/05b427b30349468331589886babef728/res/1a58d536-b103-4e8a-b455-295b4562703c/skitch.png)
 
-```
+```python
 import simplegui
 
 # Initialize globals
@@ -351,7 +351,7 @@ frame.start()
 ###Bouncing on all four walls
 >my own version
 
-```
+```python
 import simplegui
 
 # Initialize globals
@@ -396,3 +396,9 @@ frame.set_draw_handler(draw)
 # start frame
 frame.start()
 ```
+
+##Velocitiy Control
+
+
+
+(Controlling position vs velocity) [https://d396qusza40orc.cloudfront.net/interactivepython/source_videos/week4-redo/velocity_control.pdf]
