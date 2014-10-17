@@ -252,7 +252,7 @@ _Pythagorean theorem_
 *Python*
 ```
 def dist(p,q):
-    return math.srt((p[0] - q[0])**2 + (p[1] - q[1])**2)
+    return math.sqrt((p[0] - q[0])**2 + (p[1] - q[1])**2)
 ``` 
 
 ###Vector as difference of two points
@@ -261,7 +261,7 @@ def dist(p,q):
 `v = p - q`
 
 *Python - list of components*  
-`v[0] = p[0] - q[0]`
+`v[0] = p[0] - q[0]`  
 `v[1] = p[1] - p[1]`
 
 ####Move/translate point using a vector
@@ -270,7 +270,7 @@ def dist(p,q):
 `p = q + v`
 
 *Python*  
-`p[0] = q[0] + v[0] # horizontal position`
+`p[0] = q[0] + v[0] # horizontal position`  
 `p[1] = q[1] + v[1] # vertical position`
 
 ####Update for motion
