@@ -68,11 +68,19 @@ def draw(canvas):
         
     # 1. draw ball 
     canvas.draw_circle(ball_pos, BALL_RADIUS, 2, "White", "#669fb2")
-                       
-    # update paddle's vertical position, keep paddle on the screen
     
     ##############
-    # draw paddles
+    # update paddle's vertical position, keep paddle on the screen
+    
+    paddle1_pos += paddle1_vel
+    paddle2_pos += paddle2_vel
+    
+    # END update paddles
+    #
+    ##############
+    
+    ##############
+    # START draw paddles
 
     # left paddle
     #canva.draw_line((8/2, 200 - 40), (8/2, 200 + 40))
@@ -82,26 +90,41 @@ def draw(canvas):
     canvas.draw_line((WIDTH - HALF_PAD_WIDTH, paddle2_pos - HALF_PAD_HEIGHT), (WIDTH - HALF_PAD_WIDTH, paddle2_pos + HALF_PAD_HEIGHT), PAD_WIDTH, 'Blue')
     
     # END draw paddles
+    #
     ###############
     
     # draw scores
-        
+
+###############
+# moving the paddles 
+
+# on keydown paddles move in one direction
 def keydown(key):
     global paddle1_vel, paddle2_vel
     acc = 1
-    if key==simplegui.KEY_MAP["down"]:
-        paddle1_vel[1] += acc
-    if key==simplegui.KEY_MAP["up"]:
-        paddle1_vel[1] -= acc
-   
+    if key==simplegui.KEY_MAP["down"]: # move left paddle down
+        paddle1_vel += acc
+    if key==simplegui.KEY_MAP["up"]: # move right paddle up
+        paddle1_vel -= acc
+    
+    if key==simplegui.KEY_MAP["s"]: # move right paddle down
+        paddle2_vel += acc
+    if key==simplegui.KEY_MAP["w"]: # move right paddle up
+        paddle2_vel -= acc
+
+# on keyup paddles stop moving   
 def keyup(key):
     global paddle1_vel, paddle2_vel
     acc = 1
-    if key==simplegui.KEY_MAP["s"]: # move paddle down
-        paddle2_vel[1] += acc
-    if key==simplegui.KEY_MAP["w"]: # move paddle up
-        paddle2_vel[1] -= acc
+    if key==simplegui.KEY_MAP["down"]: # stop left paddle down movement
+        paddle1_vel -= acc
+    if key==simplegui.KEY_MAP["up"]: # stop left paddle up movement
+        paddle1_vel += acc
 
+    if key==simplegui.KEY_MAP["s"]: # stop right paddle down movement
+        paddle2_vel -= acc
+    if key==simplegui.KEY_MAP["w"]: # stop right paddle up movement
+        paddle2_vel += acc        
     
 # register event handlers
 
