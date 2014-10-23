@@ -30,7 +30,8 @@ always use local variables unless you have a specific reason not to
 
 ###Update a global variable in a function
 
-```num = 4
+```python
+num = 4
 
 def fun():
   global num
@@ -59,13 +60,15 @@ def fun():
 
   2. Define helper functions
 
-  ```def increment():
-         global counter
-         counter = counter + 1```
+```python
+def increment():
+  global counter 
+  counter = counter + 1```
 
   4. Define event handlers
 
-  ```def tick():
+  ```python
+  def tick():
          increment()
          print counter
 
